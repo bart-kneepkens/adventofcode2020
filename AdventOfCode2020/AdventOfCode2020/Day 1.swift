@@ -204,6 +204,7 @@ fileprivate let input = """
     """.components(separatedBy: .newlines).compactMap({ Int($0) })
 
 // MARK: - Naive
+
 struct Day1Naive {
     func part1() -> Int {
         for x in input {
@@ -213,7 +214,7 @@ struct Day1Naive {
                 }
             }
         }
-        return 0
+        fatalError("Solution not found")
     }
     
     func part2() -> Int {
@@ -226,6 +227,45 @@ struct Day1Naive {
                 }
             }
         }
-        return 0
+        fatalError("Solution not found")
+    }
+}
+
+// MARK: - Hashing
+
+struct Day1Hashing {
+    func part1() -> Int {
+        var set = Set<Int>()
+        
+        for number in input {
+            let target = 2020 - number
+            
+            if set.contains(target) {
+                return target * number
+            }
+            
+            set.insert(number)
+        }
+        
+        fatalError("Solution not found")
+    }
+    
+    func part2() -> Int {
+        var set = Set<Int>()
+        
+        for i in 0..<input.count {
+            for j in (i + 1)..<input.count {
+                let target = 2020 - input[i] - input [j]
+                
+                if set.contains(target) {
+                    return target * input[i] * input[j]
+                }
+                
+                set.insert(input[i])
+                set.insert(input[j])
+            }
+        }
+        
+        fatalError("Solution not found")
     }
 }
