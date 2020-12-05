@@ -1083,7 +1083,7 @@ struct Day4 {
                     guard parts[1].isValidHairColor else { return }
                     break
                 case "ecl":
-                    guard ["amb", "blu", "brn", "gry", "grn", "hzl", "oth"].contains(parts[1]) else { return }
+                    guard parts[1].isValidEyeColor else { return }
                     break
                 case "pid":
                     guard parts[1].isValidPassportId else { return }
@@ -1121,25 +1121,15 @@ fileprivate extension String {
     
     var isValidHairColor: Bool {
         guard self.starts(with: "#"), self.count == 7 else { return false }
-        let numbers = Array("01234556789")
-        let chars = Array("abcdef")
-        
-        for char in self.replacingOccurrences(of: "#", with: "") {
-            guard chars.contains(char) || numbers.contains(char) else {
-                return false
-            }
-        }
-        return true
+        return self[index(startIndex, offsetBy: 1)..<endIndex].filter({ !"01234556789abcdef".contains($0) }).isEmpty
+    }
+    
+    var isValidEyeColor: Bool {
+        return ["amb", "blu", "brn", "gry", "grn", "hzl", "oth"].contains(self)
     }
     
     var isValidPassportId: Bool {
-        guard self.count == 9 else { return false }
-        let numbers = Array("01234556789")
-        for char in self {
-            guard numbers.contains(char) else {
-                return false
-            }
-        }
+        guard self.count == 9, Int(self) != nil else { return false }
         return true
     }
 }
