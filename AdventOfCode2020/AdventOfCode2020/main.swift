@@ -1,4 +1,4 @@
 import Foundation
 
-print(Day5().solve()) // 878
-print(Day5().solve2()) // 504
+print(Day6.solve() == 6416) // 6416
+print(Day6.solve2() == 3050) // 3050
