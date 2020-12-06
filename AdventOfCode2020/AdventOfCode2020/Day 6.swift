@@ -2088,7 +2088,7 @@ struct Day6 {
         input.map({ $0.replacingOccurrences(of: "\n", with: "")}).map { rawInput -> Int in
             let set: Set<String.Element> = Set(rawInput)
             return set.count
-        }.reduce(0, +)s
+        }.reduce(0, +)
     }
     
     static func solve2() -> Int {
