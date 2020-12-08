@@ -8,5 +8,5 @@ import Foundation
 //print(Day6.solve3())
 //print("took \(after.timeIntervalSince(before)) to run 2")
 
-print(Day7.solve()) // 119
-print(Day7.solve2()) // 155802
+print(Day8.solve() == 1451) // 1451
+print(Day8.solve2() == 1160) // 1160
