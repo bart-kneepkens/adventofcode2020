@@ -14,6 +14,7 @@
 		340DBBEA257A32B300AADE29 /* Day 4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340DBBE9257A32B200AADE29 /* Day 4.swift */; };
 		AE4F06B5257B9DA0005ABE17 /* Day 5.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4F06B4257B9DA0005ABE17 /* Day 5.swift */; };
 		AE4F06B8257CF065005ABE17 /* Day 6.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4F06B7257CF065005ABE17 /* Day 6.swift */; };
+		AE698A9E25817865003C881D /* Day 9.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE698A9D25817865003C881D /* Day 9.swift */; };
 		AEFA6B1F257EB26F006579B4 /* Day 7.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEFA6B1E257EB26F006579B4 /* Day 7.swift */; };
 		AEFA6B232580112F006579B4 /* Day 8.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEFA6B222580112F006579B4 /* Day 8.swift */; };
 /* End PBXBuildFile section */
@@ -39,6 +40,7 @@
 		340DBBE9257A32B200AADE29 /* Day 4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day 4.swift"; sourceTree = "<group>"; };
 		AE4F06B4257B9DA0005ABE17 /* Day 5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day 5.swift"; sourceTree = "<group>"; };
 		AE4F06B7257CF065005ABE17 /* Day 6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day 6.swift"; sourceTree = "<group>"; };
+		AE698A9D25817865003C881D /* Day 9.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day 9.swift"; sourceTree = "<group>"; };
 		AEFA6B1E257EB26F006579B4 /* Day 7.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day 7.swift"; sourceTree = "<group>"; };
 		AEFA6B222580112F006579B4 /* Day 8.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day 8.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -82,6 +84,7 @@
 				AE4F06B7257CF065005ABE17 /* Day 6.swift */,
 				AEFA6B1E257EB26F006579B4 /* Day 7.swift */,
 				AEFA6B222580112F006579B4 /* Day 8.swift */,
+				AE698A9D25817865003C881D /* Day 9.swift */,
 			);
 			path = AdventOfCode2020;
 			sourceTree = "<group>";
@@ -145,6 +148,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				340DBBDD2576A96300AADE29 /* main.swift in Sources */,
+				AE698A9E25817865003C881D /* Day 9.swift in Sources */,
 				AEFA6B232580112F006579B4 /* Day 8.swift in Sources */,
 				AE4F06B5257B9DA0005ABE17 /* Day 5.swift in Sources */,
 				340DBBEA257A32B300AADE29 /* Day 4.swift in Sources */,
