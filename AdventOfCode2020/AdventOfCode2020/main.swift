@@ -1,4 +1,4 @@
 import Foundation
 
-print(Day11.solve() == 2354) // 2354
-print(Day11.solve2() == 2072) // 2072
+print(Day12.solve() == 445)
+print(Day12.solve2() == 42495)
